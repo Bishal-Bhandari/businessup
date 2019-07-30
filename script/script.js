@@ -36,7 +36,7 @@ $(document).ready(function () {
       $('.fa-sign-in-alt').attr('style', '');
 
       var classElement = document.getElementById("navbarTrue");
-      classElement.classList.remove("wow");
+      classElement.classList.remove("animated");
           }
     }
     else {
@@ -81,3 +81,4 @@ $(document).ready(function (e) {
     setTimeout(refreshData, x*1000);
 }
 refreshData(); // execute function
+
