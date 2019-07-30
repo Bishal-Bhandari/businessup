@@ -1,7 +1,27 @@
+// $(document).ready(function () {
+//   $(window).scroll(function () {
+//     var scroll = $(window).scrollTop();
+//     if (scroll > 50) {
+//       $(".navbar").css("background", "#fff");
+//       $(".navbar").css("box-shadow", "rgb(195, 193, 193) 0px 0px 15px");
+//       $(".joinus-btn").css("border", "1px solid #f56363");
+//       $(".joinus-btn").css("background", "#f56363");
+//     }
+//     else {
+//       $(".navbar").css("background", "none");
+//       $(".navbar").css("box-shadow", "none");
+//       $(".joinus-btn").css("border", "1px solid #fff");
+//       $(".joinus-btn").css("background", "none");
+//     }
+//   })
+// })
+
+// to show background color on scroll
 $(document).ready(function () {
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
-    if (scroll > 50) {
+    if ($(window).width() > 991) {
+      if (scroll > 50) {
       $(".navbar").css("background", "#fff");
       $(".navbar").css("box-shadow", "rgb(195, 193, 193) 0px 0px 15px");
       $(".joinus-btn").css("border", "1px solid #f56363");
@@ -13,8 +33,24 @@ $(document).ready(function () {
       $(".joinus-btn").css("border", "1px solid #fff");
       $(".joinus-btn").css("background", "none");
     }
+    }
+    else {
+     if (scroll > 50) {
+      $(".navbar").css("background", "#fff");
+      $(".navbar").css("box-shadow", "rgb(195, 193, 193) 0px 0px 15px");
+      $(".joinus-btn").css("border", "1px solid #f56363");
+      $(".joinus-btn").css("background", "#f56363");
+    }
+    else {
+      $(".navbar").css("background", "#fff");
+      $(".navbar").css("box-shadow", "rgb(195, 193, 193) 0px 0px 15px");
+      $(".joinus-btn").css("border", "1px solid #f56363");
+      $(".joinus-btn").css("background", "#f56363");
+    }
+    }
   })
 })
+
 
 
 // for li in info section to keep showing list one by one

@@ -147,14 +147,17 @@ nav{
 #features-first{
 	background-color: #f7f7f7;
 	height: 590px;
+	overflow-x:hidden;
 }
 #features-mid{
 	background-color: #f7f7f7;
 	height: 590px;
+	overflow-x:hidden;
 }
 #features-last{
 	background-color: #f7f7f7;
 	height: 650px;
+	overflow-x:hidden;
 }
 .features-para{
 	font-weight: 400;
@@ -201,28 +204,30 @@ nav{
   min-width: 100%; 
   min-height: 100%;
 }
-.video-row::before{
+/*.video-row::before{
 	content: "";
     background-color: #000;
     opacity: 0.3;
     position: absolute;
     left: 0px;
     width: 100%;
-    height: 500px;
+    height: 79%;
     z-index: 1;
-}
+}*/
 .video-row{
 	height: 500px;
 	overflow-y: hidden;
 }
 .video-play-btn{
 	position: absolute;
-    top: 26%;
+    top: 18%;
     left: 45%;
     z-index: 1;
     font-size: 120px;
 }
-
+.video-play-btn>a>i:hover{
+	opacity: 0.8
+}
 
 /*tour section*/
 #tour{
@@ -354,10 +359,10 @@ nav{
 
 
 /*team style*/
+/*the image of team must be width:362px and height 600px*/
+
 .team-container {
   position: relative;
-  width: 362px;
-  height: 660px;
 }
 
 .team-image {
@@ -368,7 +373,7 @@ nav{
 
 .team-hover-overlay{
   position: absolute;
-  bottom: 59px;
+  bottom: 0;
   left: 0;
   right: 0;
   background-color: var(--color-red);
@@ -380,7 +385,7 @@ nav{
 }
 
 .team-container:hover .team-hover-overlay {
-  height: 91%;
+  height: 100%;
 }
 
 .hover-container {
@@ -499,6 +504,9 @@ footer{
 /*media query*/
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
+	nav{
+	background-color: #fff;
+	}
 	section{
 	padding: 0 25px !important;
 }
@@ -529,11 +537,10 @@ footer{
 	.team-container {
   	position: relative;
   	width: 100%;
-  	height: 660px;
 }
 	.team-hover-overlay {
     position: absolute;
-    bottom: 173px;
+    bottom: 0;
     left: 0;
     right: 0;
     background-color: var(--color-red);
@@ -544,7 +551,7 @@ footer{
     transition: .5s ease;
 }
 	.team-container:hover .team-hover-overlay {
-    height: 74%;
+    height: 100%;
 }
 	.newsletter-form>input {
     width: 100%;
@@ -561,17 +568,133 @@ footer{
      margin: 0px 0px; 
 }
 .video-play-btn {
+   position: absolute;
+    top: 22%;
+    left: 31%;
+    z-index: 1;
+    font-size: 60px;
+}
+#features-first{
+	background-color: #f7f7f7;
+	height: auto;
+}
+#features-mid{
+	background-color: #f7f7f7;
+	height: auto;
+}
+#features-last{
+	background-color: #f7f7f7;
+	height: auto;
+}
+.joinus-btn{
+	width: 110px;
+	line-height: 30px;
+	border:1px solid var(--color-red);
+	color: #fff;
+	background-color: var(--color-red);
+	border-radius: 5px;
+	margin-top: 5px;
+	text-align: center;
+}
+.video-row {
+    height: 250px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	nav{
+	background-color: #fff;
+	}
+	.features-image-right img{
+	max-width: none;
+    position: unset;
+    width: 100%;
+    top: 0;
+    left: 0px;
+}
+	.features-image-left img{
+	max-width: none;
+    position: unset;
+    width: 100%;
+    top: 0;
+    right: 0px;
+}
+	.package-div-left{
+	width: 100%;
+	background-color: white;
+	float: none;
+}
+	.package-div-right{
+	width: 100%;
+	background-color: white;
+	float: none;
+}
+	.team-container {
+  	position: relative;
+  	width: 100%;
+}
+	.team-hover-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-red);
+    opacity: 0.85;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+	.team-container:hover .team-hover-overlay {
+    height: 100%;
+}
+	.newsletter-form>input {
+    width: 100%;
+    padding: 19px 20px;
+    border: 1px solid var(--color-red);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+	.subscribe-btn>a {
+     margin-left: 0px; 
+     margin-top: 0px; 
+}
+	.navbar-brand-top {
+     margin: 0px 0px; 
+}
+	.video-play-btn {
     position: absolute;
     top: 26%;
     left: 30%;
     z-index: 1;
     font-size: 120px;
 }
+#features-first{
+	background-color: #f7f7f7;
+	height: auto;
 }
-
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-
+#features-mid{
+	background-color: #f7f7f7;
+	height: auto;
+}
+#features-last{
+	background-color: #f7f7f7;
+	height: auto;
+}
+.joinus-btn{
+	width: 110px;
+	line-height: 30px;
+	border:1px solid var(--color-red);
+	color: #fff;
+	background-color: var(--color-red);
+	border-radius: 5px;
+	margin-top: 5px;
+	text-align: center;
+}
+.video-row {
+    height: 350px;
+    }
 
 }
 @media screen and (min-width: 1025px) and (max-width: 1160px) {
