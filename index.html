@@ -31,6 +31,9 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<!-- other cdn -->
+	<style type="text/css">
+		.nav-left{display: none;}
+	</style>
 </head>
 
 <body class="fontNoverflow">
@@ -52,7 +55,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav">
+				<ul class="navbar-nav nav-left">
 					<li class="nav-item mx-2">
 						<a class="nav-link link-color" href="#features-first">Features</a>
 					</li>
@@ -66,10 +69,10 @@
 						<a class="nav-link link-color" href="#team">Team</a>
 					</li>
 				</ul>
-				<ul class="navbar-nav ml-auto mr-5">
+				<ul class="navbar-nav ml-auto mr-5 nav-right">
 					<li class="nav-item mx-2 login-li">
 						<i class="fas fa-sign-in-alt d-inline"></i>
-						<a class="nav-link d-inline login-text" ref="#">Login</a>
+						<a class="nav-link d-inline login-text" href="#">Login</a>
 					</li>
 					<li class="nav-item ml-2 mr-5 joinus-btn">
 						<a class="nav-link text-white text-uppercase" href="#">join us</a>

@@ -1,38 +1,25 @@
-// $(document).ready(function () {
-//   $(window).scroll(function () {
-//     var scroll = $(window).scrollTop();
-//     if (scroll > 50) {
-//       $(".navbar").css("background", "#fff");
-//       $(".navbar").css("box-shadow", "rgb(195, 193, 193) 0px 0px 15px");
-//       $(".joinus-btn").css("border", "1px solid #f56363");
-//       $(".joinus-btn").css("background", "#f56363");
-//     }
-//     else {
-//       $(".navbar").css("background", "none");
-//       $(".navbar").css("box-shadow", "none");
-//       $(".joinus-btn").css("border", "1px solid #fff");
-//       $(".joinus-btn").css("background", "none");
-//     }
-//   })
-// })
 
-// to show background color on scroll
+// to apply style on scroll
 $(document).ready(function () {
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if ($(window).width() > 991) {
       if (scroll > 50) {
+      $(".nav-left").css("display", "flex");
       $(".navbar").css("background", "#fff");
       $(".navbar").css("box-shadow", "rgb(195, 193, 193) 0px 0px 15px");
       $(".joinus-btn").css("border", "1px solid #f56363");
       $(".joinus-btn").css("background", "#f56363");
-    }
+      $(".login-li>a").css("color", "#000");
+      
+          }
     else {
+      $(".nav-left").css("display", "none");
       $(".navbar").css("background", "none");
       $(".navbar").css("box-shadow", "none");
       $(".joinus-btn").css("border", "1px solid #fff");
-      $(".joinus-btn").css("background", "none");
-    }
+      $('.joinus-btn').attr('style', '');
+          }
     }
     else {
      if (scroll > 50) {
@@ -45,13 +32,13 @@ $(document).ready(function () {
       $(".navbar").css("background", "#fff");
       $(".navbar").css("box-shadow", "rgb(195, 193, 193) 0px 0px 15px");
       $(".joinus-btn").css("border", "1px solid #f56363");
-      $(".joinus-btn").css("background", "#f56363");
+      $(".joinus-btn").css("background", "none");
     }
     }
   })
 })
 
-
+$('.joinus-btn').attr('style', '');
 
 // for li in info section to keep showing list one by one
 function refreshData()
