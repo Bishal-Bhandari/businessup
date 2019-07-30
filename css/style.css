@@ -218,7 +218,7 @@ nav{
 .video-play-btn{
 	position: absolute;
     top: 26%;
-    left: 30%;
+    left: 45%;
     z-index: 1;
     font-size: 120px;
 }
@@ -560,7 +560,13 @@ footer{
 .navbar-brand-top {
      margin: 0px 0px; 
 }
-
+.video-play-btn {
+    position: absolute;
+    top: 26%;
+    left: 30%;
+    z-index: 1;
+    font-size: 120px;
+}
 }
 
 
