@@ -37,6 +37,8 @@ $(document).ready(function () {
 
       var classElement = document.getElementById("navbarTrue");
       classElement.classList.remove("wow");
+      classElement.classList.remove("fadeInDown");
+      classElement.classList.remove("animated");
           }
     }
     else {
@@ -81,3 +83,4 @@ $(document).ready(function (e) {
     setTimeout(refreshData, x*1000);
 }
 refreshData(); // execute function
+
