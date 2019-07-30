@@ -28,11 +28,26 @@
 	<!-- font awesome -->
 	<link href="fontawesome/css/all.css" rel="stylesheet">
 	<!-- CDN for Animation -->
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<script>
+		new WOW().init();
+		</script>
 	<!-- other cdn -->
 	<style type="text/css">
-		.nav-left{display: none;}
+		.nav-left{
+			display: none;
+		}
+		@media screen and (min-width: 320px) and (max-width: 768px) {
+			.nav-left{
+			display: flex;
+		}
+		}
+		@media screen and (min-width: 768px) and (max-width: 991px) {
+			.nav-left{
+			display: flex;
+		}
+		}
+
 	</style>
 </head>
 
@@ -42,7 +57,7 @@
 	<section id="head" class="container-fluid px-0">
 
 		<!--Navbar -->
-		<nav class="mb-1 navbar navbar-expand-lg navbar-light ">
+		<nav class="mb-1 navbar navbar-expand-lg navbar-light " id="navbarTrue">
 
 			<!-- for large view -->
 			<a class="navbar-brand-top d-lg-block d-none" href="index.html"><img class="brand-img m-0" src="img/logo/logo-light.png"
@@ -72,7 +87,7 @@
 				<ul class="navbar-nav ml-auto mr-5 nav-right">
 					<li class="nav-item mx-2 login-li">
 						<i class="fas fa-sign-in-alt d-inline"></i>
-						<a class="nav-link d-inline login-text" href="#">Login</a>
+						<a class="d-inline login-text ml-2" href="#">Login</a>
 					</li>
 					<li class="nav-item ml-2 mr-5 joinus-btn">
 						<a class="nav-link text-white text-uppercase" href="#">join us</a>
@@ -529,9 +544,7 @@
 
 		<script type="text/javascript" src="script/script.js"></script>
 		<script type="text/javascript" src="script/changeBrandImg.js"></script>
-		<script>
-			AOS.init();
-		</script>
+		
 </body>
 
 </html>

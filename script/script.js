@@ -5,20 +5,38 @@ $(document).ready(function () {
     var scroll = $(window).scrollTop();
     if ($(window).width() > 991) {
       if (scroll > 50) {
+
       $(".nav-left").css("display", "flex");
+
       $(".navbar").css("background", "#fff");
+      $(".navbar").css("margin-top", "0px");
       $(".navbar").css("box-shadow", "rgb(195, 193, 193) 0px 0px 15px");
+
       $(".joinus-btn").css("border", "1px solid #f56363");
       $(".joinus-btn").css("background", "#f56363");
-      $(".login-li>a").css("color", "#000");
-      
+
+      $(".login-text").css("color", "#5b5b5b");
+      $(".fa-sign-in-alt").css("color", "#5b5b5b");
+
+      var classElement = document.getElementById("navbarTrue");
+        classElement.className += " wow fadeInDown animated ";
           }
     else {
+
       $(".nav-left").css("display", "none");
+
+      $(".navbar").css("margin-top", "50px");
       $(".navbar").css("background", "none");
       $(".navbar").css("box-shadow", "none");
+
       $(".joinus-btn").css("border", "1px solid #fff");
       $('.joinus-btn').attr('style', '');
+
+      $('.login-text').attr('style', '');
+      $('.fa-sign-in-alt').attr('style', '');
+
+      var classElement = document.getElementById("navbarTrue");
+      classElement.classList.remove("wow");
           }
     }
     else {
