@@ -46,6 +46,9 @@ nav{
 .head-heading-top{
 	font-size: 3.5rem;
 }
+.hr-top-nav{
+	display: none;
+}
 /*for nav logo top navbae*/
 .navbar-brand-top{
 	margin: 0px 65px;
@@ -588,7 +591,14 @@ footer{
 	nav{
 	background-color: #fff;
     margin-top: 0px;
+    padding: 0px;
 }
+/*.navbar {
+    padding: .5rem 0rem;
+}*/
+/*.nav-head{
+	padding: .5rem 1rem;
+}*/
 .navbar-nav li{
 	margin:5px 0px;
 }
@@ -603,6 +613,9 @@ footer{
 }
 .row-Subtitle-heading{
 	font-size: 24px;
+}
+.navbar-collapse{
+	    border-top: 1px solid #e7e7e7;
 }
 	section{
 	padding: 0 10px !important;
