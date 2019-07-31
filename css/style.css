@@ -20,7 +20,7 @@
 .row-title-heading{
 	color: var(--color-title);
 	font-size: 24px;
-	letter-spacing: 1px;
+	/*letter-spacing: 1px;*/
     font-weight: 600;
     line-height: 1.1;
 }
@@ -28,7 +28,7 @@
 	color: var(--color-title);
 	font-size: 26px;
 	font-weight: 300;
-	letter-spacing: 1px;
+	/*letter-spacing: 1px;*/
 	line-height: 1.1;
 }
 /*section style*/
@@ -42,6 +42,9 @@ nav{
     width: 100%;
     left: 0;
     margin-top: 50px;
+}
+.head-heading-top{
+	font-size: 3.5rem;
 }
 /*for nav logo top navbae*/
 .navbar-brand-top{
@@ -586,8 +589,20 @@ footer{
 	background-color: #fff;
     margin-top: 0px;
 }
+.head-heading-top{
+	font-size: 35px;
+}
+.head-heading-bottom {
+    font-size: 22px;
+}
+.para-head-btn-below{
+	font-size: 18px;
+}
+.row-Subtitle-heading{
+	font-size: 24px;
+}
 	section{
-	padding: 0 25px !important;
+	padding: 0 10px !important;
 }
 	.features-image-right img{
 	max-width: none;
@@ -686,6 +701,29 @@ footer{
 }
 .popup-div > div {
     width: 90%;
+}
+.reviews-article>blockquote::before {
+    content: "\201C";
+    color: #e9e9e9;
+    position: absolute;
+    left: 0px;
+    top: 110px;
+    font-size: 128px;
+}
+#reviews{
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+.review-col{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.heading-lunch {
+    font-size: 40px;
+    font-weight: 600;
+}
+.lunch-btn{
+	margin-top: 25px;
 }
 
 }
