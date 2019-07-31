@@ -530,7 +530,7 @@ footer{
     background-color: none;
     box-shadow: 10px 10px 60px #555;
     display: inline-block;
-    height: 292px;
+    /*height: 292px;*/
     max-width: 1300px;
     min-height: 100px;
     vertical-align: middle;
