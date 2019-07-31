@@ -504,6 +504,71 @@ footer{
 }
 
 
+/*pop up*/
+/* Popup box BEGIN */
+.popup-div{
+    background:rgba(0,0,0,.4);
+    cursor:pointer;
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center; 
+    top:0;
+    width:100%;
+    z-index:10;
+    
+}
+.popup-div .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.popup-div > div {
+    background-color: none;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: 292px;
+    max-width: 1300px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 50%;
+    position: relative;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 11;
+
+}
+.popupCloseButton {
+    background-color: #43c5b8;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 17px;
+    line-height: 27px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    z-index: 1;
+    color: white;
+}
+.popupCloseButton:hover {
+    background-color: var(--color-red);
+}
+#myVideopopup {
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+/* Popup box BEGIN */
+
+
 
 
 
@@ -619,6 +684,10 @@ footer{
 .login-li>.fa-sign-in-alt, .login-text{
 	color: var(--color-black);
 }
+.popup-div > div {
+    width: 90%;
+}
+
 }
 
 
@@ -719,6 +788,11 @@ footer{
     .login-li>.fa-sign-in-alt, .login-text{
 	color: var(--color-black);
 }
+.popup-div > div {
+    width: 90%;
+}
+
+
 }
 @media screen and (min-width: 1025px) and (max-width: 1160px) {
 
