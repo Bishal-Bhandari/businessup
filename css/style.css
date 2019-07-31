@@ -83,6 +83,7 @@ nav{
 }
 .login-li>.fa-sign-in-alt, .login-text{
 	color: #fff;
+	text-decoration:none;
 }
 .login-li:hover>.fa-sign-in-alt{
 	color: var(--color-red) !important;
