@@ -1,12 +1,12 @@
 /*color var*/
 :root {
-  --color-red:#f56363;
-  --color-title:#4c4c4c;;
-  --volor-blue:#43c5b8;
-  --color-cite:#AEAFAF;
-  --color-black:#5b5b5b;
+  --color-red:rgb(245, 99, 99);
+  --color-title:rgb(76, 76, 76);;
+  --volor-blue:rgb(67, 197, 184);
+  --color-cite:rgb(172, 174, 174);
+  --color-black:rgb(91, 91, 91);
   --nav-link-fontsize:16px;
-  --color-muted:#8A8A8A;
+  --color-muted:rgb(138, 138, 138);
 }
 
 /*color var */
@@ -83,12 +83,14 @@ nav{
 }
 .login-li>.fa-sign-in-alt, .login-text{
 	color: #fff;
+	
 }
 .login-li:hover>.fa-sign-in-alt{
 	color: var(--color-red) !important;
 }
 .login-li:hover>.login-text{
 	color: var(--color-red) !important;
+	text-decoration:none;
 }
 
 /*header bg img*/
