@@ -593,12 +593,9 @@ footer{
     margin-top: 0px;
     padding: 0px;
 }
-/*.navbar {
-    padding: .5rem 0rem;
-}*/
-/*.nav-head{
-	padding: .5rem 1rem;
-}*/
+.team-col{
+	padding-top: 25px;
+}
 .navbar-nav li{
 	margin:5px 0px;
 }
@@ -752,6 +749,9 @@ footer{
 	}
 	.navbar-nav li{
 	margin:5px 0px;
+}
+.team-col{
+	padding-top: 25px;
 }
 	.features-image-right img{
 	max-width: none;
