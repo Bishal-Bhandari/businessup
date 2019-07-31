@@ -589,6 +589,9 @@ footer{
 	background-color: #fff;
     margin-top: 0px;
 }
+.navbar-nav li{
+	margin:5px 0px;
+}
 .head-heading-top{
 	font-size: 35px;
 }
@@ -734,6 +737,9 @@ footer{
 	background-color: #fff;
 	margin-top: 0px;
 	}
+	.navbar-nav li{
+	margin:5px 0px;
+}
 	.features-image-right img{
 	max-width: none;
     position: unset;
