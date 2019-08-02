@@ -90,3 +90,19 @@ function refreshData() {
 }
 refreshData(); // execute function
 
+
+function closeNav() {
+  document.getElementById("navbarSupportedContent").style.display = "none";
+}
+function openNav() {
+  // document.querySelector('#navbarSupportedContent').style = '';
+  var element=document.getElementById("navbarSupportedContent");
+  if(element.style.display == "block"){
+    element.style.display = "none";
+
+  }
+  else{
+    element.style.display = "block";
+
+  }
+}

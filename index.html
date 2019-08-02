@@ -10,8 +10,8 @@
 	<!-- style.css -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- bootstrap CDN -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 	<!-- JS CDN -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -65,17 +65,17 @@
 			<!-- for small view -->
 			<a class="navbar-brand-top d-lg-none d-block" href="index.html"><img class="brand-img m-0"
 					src="img/logo/logo.png" width="200px"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" onclick="openNav()" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation" id="Toggle-btn">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" data-toggle="collapse"  data-target=".nav-collapse" id="navbarSupportedContent">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav nav-left">
 					<li class="nav-item mx-2">
 						<a class="nav-link link-color" href="#features-first">Features</a>
 					</li>
 					<li class="nav-item mx-2">
-						<a class="nav-link link-color" href="#reviews">Reviews</a>
+						<a class="nav-link link-color" onclick="closeNav()" href="#reviews">Reviews</a>
 					</li>
 					<li class="nav-item mx-2">
 						<a class="nav-link link-color" href="#package">Pricing</a>
