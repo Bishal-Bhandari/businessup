@@ -1,10 +1,3 @@
-// $(function () {
-//             $('.navbar-collapse ul li a:not(.dropdown-toggle)').bind('click touchstart', function () {
-//                     $('.navbar-toggle:visible').click();
-//             });
-//     });
-
-
 
 // to apply style on scroll
 $(document).ready(function () {
@@ -58,8 +51,6 @@ $(document).ready(function () {
       else {
         $(".navbar").css("background", "#fff");
         $(".navbar").css("box-shadow", "rgb(195, 193, 193) 0px 0px 15px");
-        // $(".joinus-btn").css("border", "1px solid #f56363");
-        // $(".joinus-btn").css("background", "none");
       }
     }
   })
@@ -69,7 +60,7 @@ $('.joinus-btn').attr('style', '');
 
 // for li in info section to keep showing list one by one
 function refreshData() {
-  x = 6;  // 5 Seconds
+  x = 6;  // 6 Seconds
 
   // Do your thing here
   $(document).ready(function (e) {
