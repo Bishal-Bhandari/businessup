@@ -674,6 +674,7 @@ footer{
 .subscribe-btn>a {
      margin-left: 0px; 
      margin-top: 0px; 
+     border-radius:0.25rem;
 }
 .navbar-brand-top {
      margin: 0px 0px; 
@@ -810,6 +811,7 @@ footer{
 	.subscribe-btn>a {
      margin-left: 0px; 
      margin-top: 0px; 
+     border-radius:0.25rem;
 }
 	.navbar-brand-top {
      margin: 0px 0px; 
