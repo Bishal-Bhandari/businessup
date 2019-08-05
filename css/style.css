@@ -474,15 +474,17 @@ nav{
 	background-color: #fff;
 }
 .newsletter-form>input{
-	width: 30%;
-    padding: 19px 20px;
-    border: 1px solid var(--color-theme);
-    border-radius: 5px;
+width: 30%;
+padding-left: 5px;
+height: 4rem;
+border: 1px solid var(--color-theme);
+border-radius: 5px;
 }
 .subscribe-btn>a{
-	margin-left: -10px;
-    margin-top: -4px;
-    border-radius: 0rem 0.25rem 0.25rem 0rem;
+margin-left: -10px;
+margin-top:  -0.25rem;
+border-radius: 0rem 0.25rem 0.25rem 0rem;
+height: 4rem;
 }
 
 
