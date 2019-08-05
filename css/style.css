@@ -482,6 +482,7 @@ nav{
 .subscribe-btn>a{
 	margin-left: -10px;
     margin-top: -4px;
+    border-radius: 0rem 0.25rem 0.25rem 0rem;
 }
 
 
