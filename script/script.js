@@ -12,8 +12,8 @@ $(document).ready(function () {
         $(".navbar").css("margin-top", "0px");
         $(".navbar").css("box-shadow", "rgb(195, 193, 193) 0px 0px 15px");
 
-        $(".joinus-btn").css("border", "1px solid #f56363");
-        $(".joinus-btn").css("background", "#f56363");
+        $(".joinus-btn").css("border", "1px solid #02a597");
+        $(".joinus-btn").css("background", "#02a597");
 
         $(".login-text").css("color", "#5b5b5b");
         $(".fa-sign-in-alt").css("color", "#5b5b5b");
@@ -45,8 +45,8 @@ $(document).ready(function () {
       if (scroll > 50) {
         $(".navbar").css("background", "#fff");
         $(".navbar").css("box-shadow", "rgb(195, 193, 193) 0px 0px 15px");
-        $(".joinus-btn").css("border", "1px solid #f56363");
-        $(".joinus-btn").css("background", "#f56363");
+        $(".joinus-btn").css("border", "1px solid #02a597");
+        $(".joinus-btn").css("background", "#02a597");
       }
       else {
         $(".navbar").css("background", "#fff");
