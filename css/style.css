@@ -1,12 +1,13 @@
 /*color var*/
 :root {
-  --color-red:rgb(245, 99, 99);
+  --color-theme:#02a597;
   --color-title:rgb(76, 76, 76);;
   --volor-blue:rgb(67, 197, 184);
   --color-cite:rgb(172, 174, 174);
   --color-black:rgb(91, 91, 91);
   --nav-link-fontsize:16px;
   --color-muted:rgb(138, 138, 138);
+  --color-button-hover:#048c80;
 }
 
 /*color var */
@@ -65,7 +66,7 @@ nav{
 	color: var(--color-black) !important;
 }
 .link-color:hover{
-	color: var(--color-red) !important;
+	color: var(--color-theme) !important;
 }
 .joinus-btn{
 	width: 110px;
@@ -80,7 +81,7 @@ nav{
 	line-height: 30px;
 	border:1px solid #fff;
 	color: #fff;
-	background-color: var(--color-red);
+	background-color: var(--color-theme);
 	border-radius: 5px;
 	text-align: center;
 }
@@ -92,16 +93,16 @@ nav{
 	
 }
 .login-li:hover>.fa-sign-in-alt{
-	color: var(--color-red) !important;
+	color: var(--color-theme) !important;
 }
 .login-li:hover>.login-text{
-	color: var(--color-red) !important;
+	color: var(--color-theme) !important;
 	text-decoration:none;
 }
 
 /*header bg img*/
 #head{
-  	height: 100vh;
+  	height: 100%;
 	background-image: url(../img/header/header.jpg);
 	background-size: cover;
 	background-position: center;
@@ -124,12 +125,14 @@ nav{
 }
 /*header btn*/
 .header-btn{
-	background: var(--color-red) !important;
+	background: var(--color-theme) !important;
     width: 230px;
     line-height: 50px !important;
 }
 .header-btn:hover{
-	background:#fa5454 !important;
+	/*background:#fa5454 !important;*/
+  background:var(--color-button-hover) !important;
+  
 }
 
 
@@ -162,13 +165,13 @@ nav{
     font-size:80px;
 }
 .fa-chart-bar{
-	color: var(--color-red);
+	color: var(--color-theme);
 }
 .fa-bullhorn{
-	color: var(--color-red);
+	color: var(--color-theme);
 }
 .fa-shield-alt{
-	color: var(--color-red);
+	color: var(--color-theme);
 }
 
 
@@ -203,7 +206,7 @@ nav{
 }
 .ul-features li::before {
   	content: "\2022";
-	color: var(--color-red);
+	color: var(--color-theme);
     padding-right: .5em
 }
 .features-image-right img{
@@ -338,15 +341,15 @@ nav{
 	font-weight: bold;
 }
 .plan-features>li>i{
-	color: var(--color-red);
+	color: var(--color-theme);
 }
 .package-plan-btn{
-	background: var(--color-red) !important;
+	background: var(--color-theme) !important;
     width: 180px;
     line-height: 50px !important;
 }
 .package-plan-btn:hover{
-	background:#fa5454 !important;
+	background:var(--color-button-hover) !important;
 }
 .package-buy-button>p{
 	padding: 15px 20px 25px 20px;
@@ -356,7 +359,7 @@ nav{
 
 /*style lunch section*/
 #lunch{
-	background-color: var(--color-red);
+	background-color: var(--color-theme);
 }
 .heading-lunch{
 	font-size: 46px;
@@ -364,13 +367,13 @@ nav{
 }
 .lunch-btn{
 	background: #fff !important;
-	color: var(--color-red) !important;
+	color: var(--color-theme) !important;
     width: 215px;
-    border:1px solid var(--color-red);
+    border:1px solid var(--color-theme);
     line-height: 50px !important;
 }
 .lunch-btn:hover{
-	background: var(--color-red) !important;
+	background: var(--color-theme) !important;
 	border:1px solid #fff;
 	color: #fff !important;
 }
@@ -395,7 +398,7 @@ nav{
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: var(--color-red);
+  background-color: var(--color-theme);
   opacity: 0.85;
   overflow: hidden;
   width: 100%;
@@ -426,11 +429,11 @@ nav{
     padding: 20px 20px;
     margin: 0 15px;
     border-radius: 50%;
-    color: var(--color-red);
-    border:1px solid var(--color-red);
+    color: var(--color-theme);
+    border:1px solid var(--color-theme);
 }
 .social-icon-team:hover{
-	background-color: var(--color-red);
+	background-color: var(--color-theme);
 	color: #fff;
 	border:1px solid #fff;
 }
@@ -473,7 +476,7 @@ nav{
 .newsletter-form>input{
 	width: 30%;
     padding: 19px 20px;
-    border: 1px solid var(--color-red);
+    border: 1px solid var(--color-theme);
     border-radius: 5px;
 }
 .subscribe-btn>a{
@@ -492,7 +495,7 @@ footer{
     font-size: 18px
 }
 .footer-row p span:hover{
-	color:var(--color-red);
+	color:var(--color-theme);
 }
 .social-icon-footer{
 	width: 45px;
@@ -504,9 +507,9 @@ footer{
     border: 1px solid #8f8f8f;
 }
 .social-icon-footer:hover{
-	background-color: var(--color-red);
+	background-color: var(--color-theme);
 	color: #fff;
-	border:1px solid var(--color-red);;
+	border:1px solid var(--color-theme);;
 }
 
 
@@ -545,7 +548,7 @@ footer{
 
 }
 .popupCloseButton {
-    background-color: #43c5b8;
+    background-color: var(--color-button-hover);
     border: 3px solid #fff;
     border-radius: 50px;
     cursor: pointer;
@@ -563,7 +566,7 @@ footer{
     color: white;
 }
 .popupCloseButton:hover {
-    background-color: var(--color-red);
+    background-color: var(--color-theme);
 }
 #myVideopopup {
   width: 100%;
@@ -650,7 +653,7 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--color-red);
+    background-color: var(--color-theme);
     opacity: 0.85;
     overflow: hidden;
     width: 100%;
@@ -663,7 +666,7 @@ footer{
 	.newsletter-form>input {
     width: 100%;
     padding: 19px 20px;
-    border: 1px solid var(--color-red);
+    border: 1px solid var(--color-theme);
     border-radius: 5px;
     margin-bottom: 20px;
 }
@@ -696,9 +699,9 @@ footer{
 .joinus-btn{
 	width: 110px;
 	line-height: 30px;
-	border:1px solid var(--color-red);
+	border:1px solid var(--color-theme);
 	color: #fff;
-	background-color: var(--color-red);
+	background-color: var(--color-theme);
 	border-radius: 5px;
 	margin-top: 5px;
 	text-align: center;
@@ -786,7 +789,7 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--color-red);
+    background-color: var(--color-theme);
     opacity: 0.85;
     overflow: hidden;
     width: 100%;
@@ -799,7 +802,7 @@ footer{
 	.newsletter-form>input {
     width: 100%;
     padding: 19px 20px;
-    border: 1px solid var(--color-red);
+    border: 1px solid var(--color-theme);
     border-radius: 5px;
     margin-bottom: 20px;
 }
@@ -832,9 +835,9 @@ footer{
 .joinus-btn{
 	width: 110px;
 	line-height: 30px;
-	border:1px solid var(--color-red);
+	border:1px solid var(--color-theme);
 	color: #fff;
-	background-color: var(--color-red);
+	background-color: var(--color-theme);
 	border-radius: 5px;
 	margin-top: 5px;
 	text-align: center;
