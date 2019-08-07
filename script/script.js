@@ -1,4 +1,11 @@
 
+// refresh on resize
+window.onresize = function(event)
+{
+document.location.reload(true);
+}
+
+
 // to apply style on scroll
 $(document).ready(function () {
   $(window).scroll(function () {
